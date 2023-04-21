@@ -1,0 +1,10 @@
+body {
+  background: #1E1E1E;
+  font-family: 'Manrope', sans-serif;
+}
+
+@media(min-width: 1650px) {
+  .container {
+    max-width: 1620px;
+  }
+}

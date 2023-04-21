@@ -1,0 +1,64 @@
+.infinity {
+    padding: 120px 0;
+    background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+
+    h2 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 74px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+        @media(max-width: 1399px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
+    .wrapper {
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+
+        @media(max-width:1199px) {
+            overflow: hidden;
+        }
+
+
+        .caro {
+            padding: 28px;
+            border-right: 1px solid #FFFFFF;
+            height: 100%;
+            width: 100%;
+
+            @media(max-width:1199px) {
+                border-bottom: 1px solid #FFFFFF;
+            }
+
+            h6 {
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 40px;
+                text-transform: capitalize;
+                color: #FFFFFF;
+                padding: 15px 0 5px;
+
+
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+
+            &.five {
+                background: #000;
+                transform: scale(1.07);
+            }
+        }
+
+    }
+}

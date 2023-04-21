@@ -1,0 +1,159 @@
+.top-section {
+    background: url(../images/bg1.png) no-repeat top left/cover;
+
+    .banner {
+        background: url(../images/banner-bg.png);
+        padding: 150px 0 100px;
+
+        @media(min-width: 768px) {
+            min-height: 100vh;
+            padding: 0;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 74px;
+            line-height: 101px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding-bottom: 20px;
+
+            @media(max-width: 767px) {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+
+            span {
+                background: linear-gradient(90.04deg, #3DABFC 76.18%, #982AF7 98.34%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 38px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-bottom: 50px;
+
+            @media(max-width: 767px) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .d-button {
+            padding: 20px 25px;
+            background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+            border-radius: 10075px;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+
+
+    .key-features {
+        padding: 50px 0 150px;
+
+        h2 {
+            font-weight: 800;
+            font-size: 54px;
+            line-height: 74px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding-bottom: 45px;
+        }
+
+        .features {
+            .swiper {
+                .swiper-slide {
+                    .feature-slide {
+                        min-height: 312px;
+                        background: #090C17;
+                        border: 1px solid rgba(255, 255, 255, 0.1);
+                        border-radius: 10px;
+                        padding: 20px;
+
+
+                        @media(max-width: 1399px) {
+                            min-height: 330px;
+                        }
+
+                        .image {
+                            padding-bottom: 40px;
+                        }
+
+                        h4 {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 120%;
+                            text-transform: capitalize;
+                            color: #FFFFFF;
+                            padding-bottom: 15px;
+
+                            @media(max-width: 767px) {
+                                font-size: 20px;
+                            }
+
+                        }
+
+                        p {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #838899;
+
+                            @media(max-width: 767px) {
+                                font-size: 15px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    &.swiper-slide-active {
+                        .feature-slide {
+                            background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+                            border: 1px solid rgba(255, 255, 255, 0.1);
+                            border-radius: 10px;
+                            min-height: 342px;
+
+                            @media(max-width: 1399px) {
+                                min-height: 355px;
+                            }
+
+                            .image {
+                                padding-bottom: 20px;
+                            }
+
+                            p {
+                                color: #FFFFFF;
+                            }
+
+                            img {
+                                background: #438EFF;
+                                border-radius: 100px;
+                                padding: 10px;
+                                fill: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

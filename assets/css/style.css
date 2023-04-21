@@ -1,0 +1,478 @@
+/*=== abstracts css start === */
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #1E1E1E;
+  font-family: "Manrope", sans-serif;
+}
+
+@media (min-width: 1650px) {
+  .container {
+    max-width: 1620px;
+  }
+}
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  border-bottom: 1px solid rgba(225, 225, 225, 0.2941176471);
+}
+@media (max-width: 1199px) {
+  .header .navbar .navbar-nav {
+    background: rgba(88, 85, 85, 0.7333333333);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    padding: 20px 0 80px;
+  }
+}
+@media (min-width: 992px) {
+  .header .navbar .nav-item {
+    margin-left: 60px;
+  }
+}
+.header .navbar .nav-item .nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.header .navbar .nav-item .nav-link.active {
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header .navbar .nav-item .nav-link:hover {
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.header .navbar .nav-item .d-button {
+  padding: 20px 25px;
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  border-radius: 10075px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+.footer {
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+}
+.footer .footer-top {
+  padding: 60px 0;
+}
+.footer .footer-top h5 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+.footer .footer-top ul {
+  padding: 0;
+}
+.footer .footer-top p,
+.footer .footer-top a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.footer .footer-top a:hover {
+  background: linear-gradient(90deg, #010985 0%, #3b0f63 80.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footer .footer-top .form-wrapper {
+  position: relative;
+}
+.footer .footer-top .form-wrapper input {
+  padding: 10px;
+  background: #090C17;
+  height: 64px;
+  border-radius: 10px;
+  width: 100%;
+  color: aliceblue;
+}
+.footer .footer-top .form-wrapper .submit-button {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-30%);
+  height: 55px;
+  width: 55px;
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  border-radius: 6px;
+  border: none;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.top-section {
+  background: url(../images/bg1.png) no-repeat top left/cover;
+}
+.top-section .banner {
+  background: url(../images/banner-bg.png);
+  padding: 150px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .top-section .banner {
+    min-height: 100vh;
+    padding: 0;
+  }
+}
+.top-section .banner h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 74px;
+  line-height: 101px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .top-section .banner h1 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+}
+.top-section .banner h1 span {
+  background: linear-gradient(90.04deg, #3DABFC 76.18%, #982AF7 98.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.top-section .banner p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .top-section .banner p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.top-section .banner .d-button {
+  padding: 20px 25px;
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  border-radius: 10075px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.top-section .key-features {
+  padding: 50px 0 150px;
+}
+.top-section .key-features h2 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 45px;
+}
+.top-section .key-features .features .swiper .swiper-slide .feature-slide {
+  min-height: 312px;
+  background: #090C17;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+@media (max-width: 1399px) {
+  .top-section .key-features .features .swiper .swiper-slide .feature-slide {
+    min-height: 330px;
+  }
+}
+.top-section .key-features .features .swiper .swiper-slide .feature-slide .image {
+  padding-bottom: 40px;
+}
+.top-section .key-features .features .swiper .swiper-slide .feature-slide h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .top-section .key-features .features .swiper .swiper-slide .feature-slide h4 {
+    font-size: 20px;
+  }
+}
+.top-section .key-features .features .swiper .swiper-slide .feature-slide p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #838899;
+}
+@media (max-width: 767px) {
+  .top-section .key-features .features .swiper .swiper-slide .feature-slide p {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
+.top-section .key-features .features .swiper .swiper-slide.swiper-slide-active .feature-slide {
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  min-height: 342px;
+}
+@media (max-width: 1399px) {
+  .top-section .key-features .features .swiper .swiper-slide.swiper-slide-active .feature-slide {
+    min-height: 355px;
+  }
+}
+.top-section .key-features .features .swiper .swiper-slide.swiper-slide-active .feature-slide .image {
+  padding-bottom: 20px;
+}
+.top-section .key-features .features .swiper .swiper-slide.swiper-slide-active .feature-slide p {
+  color: #FFFFFF;
+}
+.top-section .key-features .features .swiper .swiper-slide.swiper-slide-active .feature-slide img {
+  background: #438EFF;
+  border-radius: 100px;
+  padding: 10px;
+  fill: #FFFFFF;
+}
+
+.ai {
+  padding: 50px 0;
+  background: url(../images/ai-bg.png) no-repeat top left/cover;
+}
+.ai h2 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .ai h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.ai p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .ai p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.ai.reduce {
+  background: url(../images/banner-bg.png);
+}
+
+.ibt-contract {
+  background: url(../images/ibt.png);
+  padding: 30px 0;
+}
+.ibt-contract h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .ibt-contract h3 {
+    font-size: 20px;
+  }
+}
+
+.infinity {
+  padding: 120px 0;
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+}
+.infinity h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+@media (max-width: 1399px) {
+  .infinity h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+.infinity .wrapper {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+}
+@media (max-width: 1199px) {
+  .infinity .wrapper {
+    overflow: hidden;
+  }
+}
+.infinity .wrapper .caro {
+  padding: 28px;
+  border-right: 1px solid #FFFFFF;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .infinity .wrapper .caro {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+.infinity .wrapper .caro h6 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 15px 0 5px;
+}
+.infinity .wrapper .caro p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.infinity .wrapper .caro.five {
+  background: #000;
+  transform: scale(1.07);
+}
+
+.tokenomics {
+  background: url(../images/tok-bg.png) center center/cover;
+  padding: 70px 0;
+}
+.tokenomics .container {
+  max-width: 1190px;
+}
+.tokenomics .topper {
+  padding-bottom: 50px;
+}
+.tokenomics .topper h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+.tokenomics .topper p {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.tokenomics .text p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: capitalize;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.tokenomics .text p.one {
+  color: #FF6384;
+}
+.tokenomics .text p.one::after {
+  background: #FF6384;
+}
+.tokenomics .text p.two {
+  color: #36A2EB;
+}
+.tokenomics .text p.two::after {
+  background: #36A2EB;
+}
+.tokenomics .text p.three {
+  color: #4BC0C0;
+}
+.tokenomics .text p.three::after {
+  background: #4BC0C0;
+}
+.tokenomics .text p.four {
+  color: #FFCE56;
+}
+.tokenomics .text p.four::after {
+  background: #FFCE56;
+}
+.tokenomics .text p.five {
+  color: #9966FF;
+}
+.tokenomics .text p.five::after {
+  background: #9966FF;
+}
+.tokenomics .text p.six {
+  color: #40DDFF;
+}
+.tokenomics .text p.six::after {
+  background: #40DDFF;
+}
+.tokenomics .text p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 5px;
+  border-radius: 15px;
+}
+
+.roadmap {
+  background: url(../images/banner-bg.png) no-repeat center center/cover;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

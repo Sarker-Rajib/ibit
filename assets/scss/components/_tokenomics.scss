@@ -1,0 +1,100 @@
+.tokenomics {
+    background: url(../images/tok-bg.png) center center/cover;
+    padding: 70px 0;
+
+    .container {
+        max-width: 1190px;
+    }
+
+    .topper {
+        padding-bottom: 50px;
+
+        h2 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 54px;
+            line-height: 74px;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 36px;
+            color: #FFFFFF;
+        }
+    }
+
+    .text {
+        p {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            text-transform: capitalize;
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 40px;
+
+            &.one {
+                color: #FF6384;
+
+                &::after {
+                    background: #FF6384;
+                }
+            }
+
+            &.two {
+                color: #36A2EB;
+
+                &::after {
+                    background: #36A2EB;
+                }
+            }
+
+            &.three {
+                color: #4BC0C0;
+
+                &::after {
+                    background: #4BC0C0;
+                }
+            }
+
+            &.four {
+                color: #FFCE56;
+
+                &::after {
+                    background: #FFCE56;
+                }
+            }
+
+            &.five {
+                color: #9966FF;
+
+                &::after {
+                    background: #9966FF;
+                }
+            }
+
+            &.six {
+                color: #40DDFF;
+
+                &::after {
+                    background: #40DDFF;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 20px;
+                height: 5px;
+                border-radius: 15px;
+            }
+        }
+    }
+}

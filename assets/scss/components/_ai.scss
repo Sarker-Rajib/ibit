@@ -1,0 +1,52 @@
+.ai {
+    padding: 50px 0;
+    background: url(../images/ai-bg.png) no-repeat top left/cover;
+
+    h2 {
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 74px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding-bottom: 25px;
+
+        @media(max-width: 767px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &.reduce {
+        background: url(../images/banner-bg.png);
+    }
+}
+
+.ibt-contract {
+    background: url(../images/ibt.png);
+    padding: 30px 0;
+
+    h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 32px;
+        color: #FFFFFF;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+}

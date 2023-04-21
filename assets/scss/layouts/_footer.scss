@@ -1,0 +1,66 @@
+.footer {
+    background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+
+    .footer-top {
+        padding: 60px 0;
+
+        h5 {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 32px;
+            color: #FFFFFF;
+            padding-bottom: 20px;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        p,
+        a {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #FFFFFF;
+        }
+
+
+        a {
+            &:hover {
+                background: linear-gradient(90deg, #010985 0%, #3b0f63 80.8%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+
+        .form-wrapper {
+            position: relative;
+
+            input {
+                padding: 10px;
+                background: #090C17;
+                height: 64px;
+                border-radius: 10px;
+                width: 100%;
+                color: aliceblue;
+            }
+
+            .submit-button {
+                position: absolute;
+                display: inline-block;
+                right: 5px;
+                top: 50%;
+                transform: translateY(-30%);
+                height: 55px;
+                width: 55px;
+                background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+                border-radius: 6px;
+                border: none;
+            }
+        }
+    }
+}
