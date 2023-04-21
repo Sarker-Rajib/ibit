@@ -1,3 +1,95 @@
 .roadmap {
-    background: url(../images/banner-bg.png) no-repeat center center/cover;
+    padding: 120px 0 80px;
+    background: url(../images/dot-straos.png) no-repeat center center/cover;
+
+    .container {
+        max-width: 970px;
+    }
+
+
+    h2 {
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 74px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding-bottom: 50px;
+
+        @media(max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+
+    .roadmap-channel {
+        position: relative;
+
+        .item {
+            display: flex;
+
+            .box {
+                background: #090C17;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 6px;
+                min-height: 140px;
+                padding: 16px;
+                flex-grow: 1;
+                margin: 10px;
+
+                &:hover {
+                    background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+
+                    p {
+                        color: #FFFFFF;
+                    }
+                }
+
+
+                h6 {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    padding-bottom: 10px;
+                }
+
+                h5 {
+                    font-weight: 800;
+                    font-size: 20px;
+                    line-height: 27px;
+                    text-transform: capitalize;
+                    display: inline-block;
+                    background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #838899;
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 12px;
+            height: calc(100% - 157px);
+            width: 1px;
+            background: #3DABFC;
+
+            @media(max-width: 767px) {
+                display: none;
+            }
+        }
+    }
 }

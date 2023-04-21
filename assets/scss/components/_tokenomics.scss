@@ -18,6 +18,11 @@
             text-transform: capitalize;
             color: #FFFFFF;
             padding-bottom: 30px;
+
+            @media(max-width: 767px) {
+                font-size: 40px;
+                padding-bottom: 0px;
+            }
         }
 
         p {
@@ -25,6 +30,10 @@
             font-size: 42px;
             line-height: 36px;
             color: #FFFFFF;
+
+            @media(max-width: 767px) {
+                font-size: 30px;
+            }
         }
     }
 

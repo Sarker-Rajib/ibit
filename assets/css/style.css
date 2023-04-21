@@ -214,6 +214,11 @@ body {
   color: #FFFFFF;
   padding-bottom: 45px;
 }
+@media (max-width: 767px) {
+  .top-section .key-features h2 {
+    font-size: 40px;
+  }
+}
 .top-section .key-features .features .swiper .swiper-slide .feature-slide {
   min-height: 312px;
   background: #090C17;
@@ -410,11 +415,22 @@ body {
   color: #FFFFFF;
   padding-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .tokenomics .topper h2 {
+    font-size: 40px;
+    padding-bottom: 0px;
+  }
+}
 .tokenomics .topper p {
   font-weight: 400;
   font-size: 42px;
   line-height: 36px;
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .tokenomics .topper p {
+    font-size: 30px;
+  }
 }
 .tokenomics .text p {
   font-weight: 600;
@@ -472,7 +488,88 @@ body {
 }
 
 .roadmap {
-  background: url(../images/banner-bg.png) no-repeat center center/cover;
+  padding: 120px 0 80px;
+  background: url(../images/dot-straos.png) no-repeat center center/cover;
+}
+.roadmap .container {
+  max-width: 970px;
+}
+.roadmap h2 {
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .roadmap h2 {
+    font-size: 40px;
+  }
+}
+.roadmap .roadmap-channel {
+  position: relative;
+}
+.roadmap .roadmap-channel .item {
+  display: flex;
+}
+.roadmap .roadmap-channel .item .box {
+  background: #090C17;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  min-height: 140px;
+  padding: 16px;
+  flex-grow: 1;
+  margin: 10px;
+}
+.roadmap .roadmap-channel .item .box:hover {
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+}
+.roadmap .roadmap-channel .item .box:hover p {
+  color: #FFFFFF;
+}
+.roadmap .roadmap-channel .item .box h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+.roadmap .roadmap-channel .item .box h5 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: capitalize;
+  display: inline-block;
+  background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 10px;
+}
+.roadmap .roadmap-channel .item .box p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #838899;
+}
+.roadmap .roadmap-channel::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 12px;
+  height: calc(100% - 157px);
+  width: 1px;
+  background: #3DABFC;
+}
+@media (max-width: 767px) {
+  .roadmap .roadmap-channel::after {
+    display: none;
+  }
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */

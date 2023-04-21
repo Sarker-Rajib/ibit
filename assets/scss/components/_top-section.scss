@@ -75,6 +75,10 @@
             text-transform: capitalize;
             color: #FFFFFF;
             padding-bottom: 45px;
+
+            @media(max-width: 767px) {
+                font-size: 40px;
+            }
         }
 
         .features {
