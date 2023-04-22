@@ -2,6 +2,10 @@
     padding: 120px 0;
     background: linear-gradient(90deg, #3DABFC 0%, #982AF7 80.8%);
 
+    @media(max-width: 767px) {
+        padding: 50px 0 50px;
+    }
+
     h2 {
         font-style: normal;
         font-weight: 800;
@@ -14,6 +18,12 @@
             font-size: 40px;
             line-height: 50px;
         }
+
+        @media(max-width: 767px) {
+            padding-bottom: 20px;
+            font-size: 35px;
+            line-height: 40px;
+        }
     }
 
     .wrapper {
@@ -23,7 +33,6 @@
         @media(max-width:1199px) {
             overflow: hidden;
         }
-
 
         .caro {
             padding: 28px;
@@ -43,6 +52,13 @@
                 color: #FFFFFF;
                 padding: 15px 0 5px;
 
+                @media(max-width:1399px) {
+                    font-size: 26px;
+                }
+
+                @media(max-width:1199px) {
+                    font-size: 24px;
+                }
 
             }
 
@@ -54,9 +70,9 @@
                 color: #FFFFFF;
             }
 
-            &.five {
+            &:hover {
                 background: #000;
-                transform: scale(1.07);
+                transform: scale(1.03);
             }
         }
 

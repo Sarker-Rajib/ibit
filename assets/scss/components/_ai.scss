@@ -45,6 +45,10 @@
         line-height: 32px;
         color: #FFFFFF;
 
+        @media(max-width: 1399px) {
+            font-size: 25px;
+        }
+
         @media(max-width: 767px) {
             font-size: 20px;
         }

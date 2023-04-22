@@ -12,6 +12,10 @@
 
         .nav-item {
             @media(min-width: 992px) {
+                margin-left: 25px;
+            }
+
+            @media(min-width: 1400px) {
                 margin-left: 60px;
             }
 
@@ -46,6 +50,10 @@
                 line-height: 22px;
                 color: #FFFFFF;
                 display: inline-block;
+
+                &:hover{
+                    background: linear-gradient(90deg, #982AF7 0%,  #3DABFC 80.8%);
+                }
             }
         }
     }
